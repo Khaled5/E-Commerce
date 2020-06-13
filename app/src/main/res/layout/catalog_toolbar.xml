@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorWhite"
+    android:elevation="10dp">
+
+
+    <ImageView
+        android:id="@+id/favourites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        tools:ignore="ContentDescription"
+        app:layout_constraintBottom_toBottomOf="@+id/add_product_tool_bar"
+        app:layout_constraintEnd_toEndOf="@+id/add_product_tool_bar"
+        app:layout_constraintTop_toTopOf="@+id/add_product_tool_bar"
+        app:srcCompat="@drawable/ic_to_favorites" />
+
+    <FrameLayout
+        android:id="@+id/add_product_tool_bar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/CustomTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:text="@string/jeans"
+        app:layout_constraintBottom_toBottomOf="@+id/add_product_tool_bar"
+        app:layout_constraintStart_toStartOf="@+id/add_product_tool_bar"
+        app:layout_constraintTop_toTopOf="@+id/add_product_tool_bar" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
