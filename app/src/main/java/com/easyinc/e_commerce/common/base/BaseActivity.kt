@@ -1,6 +1,9 @@
 package com.easyinc.e_commerce.common.base
 
 import android.view.View
+import android.view.WindowManager
+import androidx.core.content.ContextCompat
+import com.easyinc.e_commerce.R
 import com.easyinc.e_commerce.common.base.viewmodel.factory.getViewModel
 import com.easyinc.e_commerce.common.extentions.androidLazy
 import com.easyinc.e_commerce.common.extentions.errorSnack
@@ -69,6 +72,13 @@ open class BaseActivity: DaggerAppCompatActivity(), NetworkConnectivityListener 
     fun hideAll(){
         frame_loading.visibility = View.GONE
         frame_internet_error.visibility = View.GONE
+    }
+
+    fun setStatusBarColor(){
+        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+        window.statusBarColor = ContextCompat.getColor(this, R.color.colorStatusBar)
     }
 
     companion object{

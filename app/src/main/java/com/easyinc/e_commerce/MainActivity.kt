@@ -15,6 +15,8 @@ class MainActivity : BaseActivity() {
 
         checkInternetConnectionOnce()
 
+        setStatusBarColor()
+
     }
 
     private fun checkInternetConnectionOnce(){

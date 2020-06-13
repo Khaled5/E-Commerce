@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorWhite"
+    android:fitsSystemWindows="false"
     tools:context=".ui.product_deatils.ProductDetailsFragment">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <Button
         android:id="@+id/add_to_cart"
@@ -18,6 +22,7 @@
         android:background="@color/colorRed"
         android:text="@string/add_to_cart"
         android:textAllCaps="true"
+        android:stateListAnimator="@null"
         android:elevation="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/frame_layout"
@@ -80,11 +85,10 @@
         android:layout_marginStart="@dimen/_16sdp"
         android:layout_marginEnd="@dimen/_16sdp"
         android:layout_marginBottom="@dimen/_5sdp"
-        style="@style/CustomTextStyle"
-        android:textSize="@dimen/_12sdp"
+        style="@style/CustomNewTextStyle"
+        android:background="@color/colorRed"
         android:text="@string/new_product"
         app:layout_constraintBottom_toTopOf="@id/details_title"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
@@ -115,12 +119,13 @@
         android:id="@+id/details_back_arrow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_24sdp"
-        android:layout_marginTop="@dimen/_24sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_30sdp"
         android:src="@drawable/ic_arrow_back"
         tools:ignore="ContentDescription"
         app:layout_constraintStart_toStartOf="@+id/details_image"
         app:layout_constraintTop_toTopOf="@+id/details_image" />
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

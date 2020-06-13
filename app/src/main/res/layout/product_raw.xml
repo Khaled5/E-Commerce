@@ -3,34 +3,32 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="400dp"
+    android:layout_height="@dimen/_300sdp"
     android:background="@color/colorWhite"
-    android:layout_margin="7dp">
+    android:layout_margin="@dimen/_8sdp">
 
     <ImageView
         android:id="@+id/details_image"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/_3sdp"
         android:scaleType="centerCrop"
-        tools:ignore="ContentDescription"
         app:layout_constraintBottom_toTopOf="@+id/product_is_new"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription"
         tools:srcCompat="@drawable/placeholder" />
 
     <TextView
         android:id="@+id/product_is_new"
-        style="@style/CustomTextStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/_4sdp"
         android:text="@string/new_product"
-        android:textColor="@color/colorBlack"
-        android:textSize="@dimen/_12sdp"
-        android:textStyle="normal"
+        style="@style/CustomNewTextStyle"
+        android:background="@color/colorRed"
         app:layout_constraintBottom_toTopOf="@+id/product_title"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView

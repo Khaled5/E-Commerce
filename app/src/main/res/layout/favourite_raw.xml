@@ -36,15 +36,13 @@
 
     <TextView
         android:id="@+id/is_favourite_new"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_16sdp"
         android:layout_marginEnd="@dimen/_8sdp"
-        style="@style/CustomTextStyle"
         android:text="@string/new_product"
-        android:textSize="@dimen/_12sdp"
-        android:textStyle="normal"
-        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/CustomNewTextStyle"
+        android:background="@color/colorRed"
         app:layout_constraintStart_toEndOf="@+id/favorite_image"
         app:layout_constraintTop_toBottomOf="@+id/favorite_remove" />
 
@@ -84,6 +82,7 @@
         android:layout_marginEnd="@dimen/_8sdp"
         android:layout_marginBottom="@dimen/_8sdp"
         android:background="@color/colorRed"
+        android:stateListAnimator="@null"
         android:text="@string/add_to_cart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

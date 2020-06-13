@@ -8,4 +8,5 @@
     <color name="colorLightGray">#EAEAEA</color>
     <color name="colorRed">#E82B2B</color>
     <color name="colorWhite">#FFFFFF</color>
+    <color name="colorStatusBar">#20000000</color>
 </resources>

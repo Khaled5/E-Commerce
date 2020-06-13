@@ -15,7 +15,6 @@ import com.easyinc.e_commerce.MainActivity
 import com.easyinc.e_commerce.R
 import com.easyinc.e_commerce.common.base.BaseFragment
 import com.easyinc.e_commerce.ui.model.Product
-import kotlinx.android.synthetic.main.favourites_toolbar.*
 import kotlinx.android.synthetic.main.fragment_product_details.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -115,11 +114,11 @@ class ProductDetailsFragment : BaseFragment() {
     }
 
     private fun addToFavourite(product: Product){
-        mViewModel.addToFavourites(productMapper.mapFrom(product))
+        mViewModel.addToFavourites(productMapper.mapFrom(product),20)
     }
 
     private fun removeFromFavourite(product: Product){
-        mViewModel.removeFromFavourites(productMapper.mapFrom(product))
+        mViewModel.removeFromFavourites(productMapper.mapFrom(product),20)
     }
 
     private fun animateFavourite(favAction: () -> Unit){
