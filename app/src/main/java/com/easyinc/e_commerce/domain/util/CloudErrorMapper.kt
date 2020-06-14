@@ -69,7 +69,7 @@ class CloudErrorMapper @Inject constructor(private val gson: Gson) {
 
     companion object{
         const val SOMETHING_WENT_WRONG = "Что-то пошло не так!"
-        const val CHECK_INTERNET_CONNECTION = "Что-то пошло не так!"
+        const val CHECK_INTERNET_CONNECTION = "Нет соединения с интернетом!"
         const val TIME_OUT = "Истекло время ожидания!"
         const val UNABLE_TO_CONNECT_TO_SERVER = "Не удалось связаться с сервером!"
     }

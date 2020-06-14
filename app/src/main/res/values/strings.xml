@@ -2,7 +2,6 @@
     <string name="app_name">E-Commerce</string>
     <string name="new_product">NEW</string>
 
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="jeans">Джинсы</string>
     <string name="found_products">Найдено: %1$d товаров</string>
     <string name="favourite">Избранное</string>

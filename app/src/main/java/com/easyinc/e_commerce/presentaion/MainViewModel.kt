@@ -43,7 +43,7 @@ class MainViewModel
             }
             }
 
-            onError { message.value = Resource.Error(it.message.toString()) }
+            onError { message.value = Resource.Error(it.message!!,Pair(it.message,it.code!!)) }
 
             onCancel {  }
         }
@@ -63,7 +63,7 @@ class MainViewModel
             }
             }
 
-            onError { message.value = Resource.Error(it.message.toString()) }
+            onError { message.value = Resource.Error(it.message!!,Pair(it.message,it.code!!)) }
 
             onCancel { }
         }

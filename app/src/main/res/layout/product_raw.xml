@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/_300sdp"
+    android:layout_height="@dimen/_270sdp"
     android:background="@color/colorWhite"
     android:layout_margin="@dimen/_8sdp">
 
@@ -18,16 +18,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="ContentDescription"
-        tools:srcCompat="@drawable/placeholder" />
+        android:src="@drawable/placeholder" />
 
     <TextView
         android:id="@+id/product_is_new"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/_4sdp"
         android:text="@string/new_product"
         style="@style/CustomNewTextStyle"
-        android:background="@color/colorRed"
         app:layout_constraintBottom_toTopOf="@+id/product_title"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -36,8 +34,9 @@
         style="@style/CustomTextStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
         android:textColor="@color/colorGray"
+        android:ellipsize="end"
         app:layout_constraintBottom_toTopOf="@+id/product_price"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -49,6 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/_16sdp"
         android:textColor="@color/colorBlack"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/product_to_favourite"
         app:layout_constraintStart_toStartOf="parent" />

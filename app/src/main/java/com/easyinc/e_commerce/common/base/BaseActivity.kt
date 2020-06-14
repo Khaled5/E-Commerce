@@ -53,7 +53,7 @@ open class BaseActivity: DaggerAppCompatActivity(), NetworkConnectivityListener 
             }
             false -> {
                 isNetworkConnected = true
-                showErrorSnackBar("No Internet Connection!", INDEFINITE_DURATION)
+                showErrorSnackBar(NO_CONNECTION, INDEFINITE_DURATION)
             }
         }
     }
@@ -84,6 +84,7 @@ open class BaseActivity: DaggerAppCompatActivity(), NetworkConnectivityListener 
     companion object{
         const val NORMAL_DURATION = 3000
         const val INDEFINITE_DURATION = Snackbar.LENGTH_INDEFINITE
+        const val NO_CONNECTION = "Нет соединения с интернетом"
     }
 
 }

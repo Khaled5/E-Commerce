@@ -86,7 +86,6 @@
         android:layout_marginEnd="@dimen/_16sdp"
         android:layout_marginBottom="@dimen/_5sdp"
         style="@style/CustomNewTextStyle"
-        android:background="@color/colorRed"
         android:text="@string/new_product"
         app:layout_constraintBottom_toTopOf="@id/details_title"
         app:layout_constraintStart_toStartOf="parent" />
@@ -95,7 +94,7 @@
         android:id="@+id/details_image"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
         android:scaleType="centerCrop"
         android:src="@drawable/placeholder"
         tools:ignore="ContentDescription"

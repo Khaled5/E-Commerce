@@ -33,7 +33,11 @@ class MainActivity : BaseActivity() {
                     showLoading()
                 }
                 Resource.Status.ERROR -> {
-                    if (it.data!!.second == 2) showErrorSnackBar(it.data.first, INDEFINITE_DURATION) else showErrorSnackBar(it.data.first)
+                    if (it.data!!.second == 2) showErrorSnackBar(it.data.first, INDEFINITE_DURATION) else
+                    {
+                        hideAll()
+                        showErrorSnackBar(it.data.first)
+                    }
                 }
                 Resource.Status.SUCCESS -> {
                     if (it.data!!.second == 10) showRegularSnackbar(it.data.first) else showRegularSnackbar(it.data.first, product_details_snack)

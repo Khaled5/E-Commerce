@@ -23,6 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_20sdp"
             android:text="@string/favourite"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/add_product_tool_bar"
             app:layout_constraintStart_toEndOf="@id/favourite_backpress"
             app:layout_constraintTop_toTopOf="@+id/add_product_tool_bar" />
