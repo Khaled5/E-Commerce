@@ -1,6 +1,7 @@
 package com.easyinc.e_commerce
 
 import android.os.Bundle
+import androidx.core.content.ContextCompat
 import androidx.lifecycle.Observer
 import com.easyinc.e_commerce.common.base.BaseActivity
 import com.easyinc.e_commerce.common.network_state.NetworkStateHolder
@@ -47,7 +48,9 @@ class MainActivity : BaseActivity() {
     }
 
 
-
-
+    override fun onBackPressed() {
+        super.onBackPressed()
+        window.statusBarColor = ContextCompat.getColor(this, R.color.colorBlack)
+    }
 
 }

@@ -78,7 +78,7 @@ open class BaseActivity: DaggerAppCompatActivity(), NetworkConnectivityListener 
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
-        window.statusBarColor = ContextCompat.getColor(this, R.color.colorStatusBar)
+        window.statusBarColor = ContextCompat.getColor(this, R.color.colorBlack)
     }
 
     companion object{

@@ -7,6 +7,7 @@ import android.view.View
 import android.view.animation.OvershootInterpolator
 import android.widget.Toast
 import androidx.core.animation.doOnEnd
+import androidx.core.content.ContextCompat
 import androidx.lifecycle.Observer
 import androidx.navigation.Navigation
 import com.bumptech.glide.RequestManager
@@ -34,6 +35,7 @@ class ProductDetailsFragment : BaseFragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         mViewModel = (activity as MainActivity).mainViewModel
+        requireActivity().window.statusBarColor = ContextCompat.getColor(requireContext(), R.color.colorStatusBar)
     }
 
 
